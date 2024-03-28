@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Jochem Kemp | Biography </title>
+
+    <!-- For preconnecting with the fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Loading the fonts, now we can use these font in our css file -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- reference to the css-stylesheet: -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+
+</head>
+<body>
+    <main class="main main--error">
+        <h1>
+            404 - Page not Found
+        </h1>
+        <p>
+            Sorry wrong page !
+        </p>
+        <a href="{{ url_for('home') }}">
+            Go to home
+        </a>
+    </main>
+</body>
+</html>

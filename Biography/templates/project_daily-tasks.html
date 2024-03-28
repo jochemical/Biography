@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+    <main class="main main--project">
+        <div>
+            <img
+                class="hero"
+                src="{{ url_for('static', filename=project['hero']) }}"
+                alt="Example image of project."
+            />
+
+            <article class="project">
+                <article class="project__content">
+                    <h2 class="project__heading">{{ project['name'] }}</h2>
+
+                    <p>
+                        Daily Tasks is a webapplication in which users can schedule new daily tasks to their digital agenda. After adding a task at the current day, it will be repeated for each following day. When a task is clicked on, it is denoted as 'done' by the check-symbol. Tasks are added by using the add-button at the upper right corner. It includes multiple functionalities which are a good learning practice and could be used in a lot of other projects. After this project I learned to work with blueprints and to use the current time/date to create the navigation buttons at the top. The navigation bar can be clicked to scroll to one of the previous/following days. CSS is used to adjust for diverse screensizes. A MongoDB database is used to link the uncompleted tasks to the already completed ones. It is created in Flask and uses coding languages as HTML (Jinja2), CSS, and Python. 
+                    </p>
+
+                    <p class="reference">
+                        *This project was based on the course 'Web Developer Bootcamp with Flask and Python' of 
+                        Jose Salvatierra (Teclado).
+                    </p>
+                </article>
+
+                <section>
+                    <article class="project__meta-group">
+                        <h3 class="project__heading project__heading--meta">Technologies used</h3>
+
+                        <ul class="technology-list">
+                            <li class="technology-list__item">Python</li>
+                            <li class="technology-list__item">HTML</li>
+                            <li class="technology-list__item">CSS</li>
+                            <li class="technology-list__item">MongDB</li>
+                        </ul>
+                    </article>
+
+                    <a class="cta" href="{{ project['prod'] }}">
+                        <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+                        View in production
+                    </a>
+                </section>
+            </article>
+        </div>
+    </main>
+{% endblock %}
