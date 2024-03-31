@@ -182,6 +182,19 @@ body {
     }
 }
 
+/* To work on a mobile phone / small screen */
+.main--project {
+    justify-content: center;
+}
+
+@media (max-width:48.75em) {
+    .main--project {
+        justify-content: left;
+    }
+}
+/* ----------------------------------------- */
+
+
 .project__heading {
     margin: 0;
     font-size: 2rem;
