@@ -6,7 +6,11 @@
 
 html {
     /* font-family: Lato, "sans-serif"; */
+<<<<<<< HEAD
     font-family: "Quicksand","Special Elite", system-ui;
+=======
+    font-family: "Quicksand", "Special Elite", system-ui;
+>>>>>>> 03278502c618c1a829b784cee1a38dc917207b17
     font-weight: 400;
     font-style: normal;
 }
@@ -144,11 +148,14 @@ body {
 }
 
 
+<<<<<<< HEAD
 /* --------------- Styling project-detail pages ------------------- */
 
 
 /*  Image of detail page */
 
+=======
+>>>>>>> 03278502c618c1a829b784cee1a38dc917207b17
 .hero {
     max-width: 600px;
     border-radius: 1rem;
@@ -158,8 +165,11 @@ body {
     justify-content: center;
 }
 
+<<<<<<< HEAD
 /*  Description of detail page */
 
+=======
+>>>>>>> 03278502c618c1a829b784cee1a38dc917207b17
 .project {
     margin-top: 20px;
     display: flex;
@@ -170,7 +180,11 @@ body {
 }
 
 .project__content {
+<<<<<<< HEAD
     font-family: "Quicksand","Special Elite", system-ui;
+=======
+    font-family: "Quicksand", "Special Elite", system-ui;
+>>>>>>> 03278502c618c1a829b784cee1a38dc917207b17
     margin-bottom: 1rem;
     margin-right: 2rem;
     line-height: 150%;
@@ -181,8 +195,11 @@ body {
         line-height: 100%;
 }
 
+<<<<<<< HEAD
 
 /* Adjust for screensize */
+=======
+>>>>>>> 03278502c618c1a829b784cee1a38dc917207b17
 @media (min-width: 48.75rem) {
     .project {
         flex-direction: row;
@@ -191,8 +208,12 @@ body {
     }
 }
 
+<<<<<<< HEAD
 /* To work on a mobile phone */
 
+=======
+/* To work on a mobile phone / small screen */
+>>>>>>> 03278502c618c1a829b784cee1a38dc917207b17
 .main--project {
     justify-content: center;
 }
@@ -202,8 +223,13 @@ body {
         justify-content: left;
     }
 }
+<<<<<<< HEAD
 
 /* ----- */
+=======
+/* ----------------------------------------- */
+
+>>>>>>> 03278502c618c1a829b784cee1a38dc917207b17
 
 .project__heading {
     margin: 0;
