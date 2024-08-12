@@ -6,7 +6,7 @@
 
 html {
     /* font-family: Lato, "sans-serif"; */
-    font-family: "Special Elite", system-ui;
+    font-family: "Quicksand", "Special Elite", system-ui;
     font-weight: 400;
     font-style: normal;
 }
@@ -163,7 +163,7 @@ body {
 }
 
 .project__content {
-    font-family: "Special Elite", system-ui;
+    font-family: "Quicksand", "Special Elite", system-ui;
     margin-bottom: 1rem;
     margin-right: 2rem;
     line-height: 150%;
