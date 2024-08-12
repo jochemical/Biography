@@ -28,6 +28,13 @@ projects = [
         "categories": ["Flask", "MongoDB"],
         "slug": "my_cinema",
     },
+    {
+        "name": "Warehouse REST API",
+        "thumb": "img/warehouse.png",
+        "hero": "img/warehouse.png",
+        "categories": ["REST API","SQL & Docker"],
+        "slug": "warehouse",
+    },
 ]
 
 # change the list to a dictionary of dictionaries:
