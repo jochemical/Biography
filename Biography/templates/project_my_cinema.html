@@ -1,47 +1,62 @@
 {% extends 'base.html' %}
 {% block content %}
-    <main class="main main--project">
-        <div>
-            <img
-                class="hero"
-                src="{{ url_for('static', filename=project['hero']) }}"
-                alt="Example image of project"
-            />
+<main class="main main--project">
+    <div>
+        <img class="hero" src="{{ url_for('static', filename=project['hero']) }}" alt="Example image of project" />
 
-            <article class="project">
-                <article class="project__content">
-                    <h2 class="project__heading">{{ project['name'] }}</h2>
+        <article class="project">
+            <article class="project__content">
+                <h2 class="project__heading">{{ project['name'] }}</h2>
 
-                    <p>
-                        My Cinema is a webapplication in which users create their own personal movie watchlist and add all kind of information including the year of production, last-watched date, director, cast, tags, series, description, star-grading and the embedding of a Youtube-iframe. The user should first register by creating a personal account using an e-mail adress and a new password. With this account the user can login and see his personal list of movies. Movies are added by using the add-button at the lower right corner. After clicking this button, a movie can be added by using an input form. Extra information can be added or adjusted later on using the edit-link. CSS-variables enable to choose between a light or a dark mode.
-                    </p>
-                    <p>
-                        After this project I learned a lot of new libraries and backend techniques, including app-configurations, dataclasses, classes to set up inputforms, Flaksforms, wtforms, wtform fields and validators,  hashing passwords, decorators (wrappers), secret keys, store user information within the session cookies, flash messages and more. Also within the frontend I applied a lot of different new techniques like CSS-variables, Jinja2 pipe operators, BEM modifiers, HTML table structures,  and a lot of Jinja2-macro's. This application will allow for diverse screensizes by adjusting to the screensize of the user. A MongoDB datebase is used to store user profiles and link them to their personal movies. It is created in Flask and uses coding languages as HTML (Jinja2), CSS, and Python. It was a great project to work on and I learned a lot of new coding techniques !
-                    </p>
-                    <p class="reference">
-                        *This project was based on the course 'Web Developer Bootcamp with Flask and Python' of 
-                        Jose Salvatierra (Teclado).
-                    </p>
+                <p>
+                    My Cinema is a web application that allows users to create a personalized movie watchlist, where
+                    they can add various details such as the year of production, last-watched date, director, cast,
+                    tags, series, description, star rating, and an embedded YouTube iframe. To get started, users must
+                    first register by creating a personal account using their email address and a new password. Once
+                    registered, they can log in to view their personal movie list. Movies can be added by clicking the
+                    "Add" button located in the lower right corner, which opens a form for inputting movie details.
+                    Additional information can be added or modified later using the "Edit" link. CSS variables allow
+                    users to switch between light and dark modes.
+                </p>
+
+                <p>
+                    Through this project, I gained extensive knowledge of various libraries and backend techniques,
+                    including application configurations, data classes, input form setup, FlaskForms, WTForms, WTForm
+                    fields and validators, password hashing, decorators (wrappers), secret keys, session cookies (for
+                    storing user information), flash messages, and more. On the frontend, I applied a range of new
+                    techniques, such as CSS variables, Jinja2 pipe operators, BEM modifiers, HTML table structures, and
+                    numerous Jinja2 macros. This application is designed to adapt to different screen sizes, ensuring a
+                    responsive user experience. It uses a MongoDB database to store user profiles and link them to their
+                    personal movie collections. The project was developed in Flask and utilizes HTML (Jinja2), CSS, and
+                    Python. It was a valuable experience, allowing me to learn and implement various coding techniques.
+                </p>
+
+                <p class="reference">
+                    *This project was based on the course 'Web Developer Bootcamp with Flask and Python' of
+                    Jose Salvatierra (Teclado).
+                </p>
+
+            </article>
+
+            <section>
+                <article class="project__meta-group">
+                    <h3 class="project__heading project__heading--meta">Technologies used</h3>
+
+                    <ul class="technology-list">
+                        <li class="technology-list__item">Python</li>
+                        <li class="technology-list__item">HTML</li>
+                        <li class="technology-list__item">Jinja2</li>
+                        <li class="technology-list__item">CSS</li>
+                        <li class="technology-list__item">MongoDB</li>
+                    </ul>
                 </article>
 
-                <section>
-                    <article class="project__meta-group">
-                        <h3 class="project__heading project__heading--meta">Technologies used</h3>
-
-                        <ul class="technology-list">
-                            <li class="technology-list__item">Python</li>
-                            <li class="technology-list__item">HTML</li>
-                            <li class="technology-list__item">CSS</li>
-                            <li class="technology-list__item">MongoDB</li>
-                        </ul>
-                    </article>
-
-                    <!-- <a class="cta" href="{{ project['prod'] }}">
+                <!-- <a class="cta" href="{{ project['prod'] }}">
                         <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
                         View in production
                     </a> -->
-                </section>
-            </article>
-        </div>
-    </main>
+            </section>
+        </article>
+    </div>
+</main>
 {% endblock %}

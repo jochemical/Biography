@@ -1,45 +1,54 @@
 {% extends 'base.html' %}
 {% block content %}
-    <main class="main main--project">
-        <div>
-            <img
-                class="hero"
-                src="{{ url_for('static', filename=project['hero']) }}"
-                alt="Example image of project"
-            />
+<main class="main main--project">
+    <div>
+        <img class="hero" src="{{ url_for('static', filename=project['hero']) }}" alt="Example image of project" />
 
-            <article class="project">
-                <article class="project__content">
-                    <h2 class="project__heading">{{ project['name'] }}</h2>
+        <article class="project">
+            <article class="project__content">
+                <h2 class="project__heading">{{ project['name'] }}</h2>
 
-                    <p>
-                        This Flask web application serves as a REST API for managing warehouse data. Users can register and login to create stores, items, and tags, all stored in a SQLite database. The application runs within a Docker container. Through this project, I gained experience working with datamodels using SQLAlchemy, datavalidation with Schemas, and datamigrations using Alembic, and I learned to write JWT access-tokens for secure authentication. I also deepened my understanding of Docker, including images, volumes, containers and Docker Compose, and practiced using Insomnia and DBeaver. While this web application does not include a frontend, I acquired a wide range of techniques that are applicable to many other projects.                     
-                    </p>
+                <p>
+                    This Flask web application functions as a REST API for managing warehouse data. Users can register
+                    and log in to create stores, items, and tags, with all data stored in a SQLite database. The
+                    application operates within a Docker container.
+                </p>
 
-                    <p class="reference">
-                        *This web application is based on the 2024 course "REST APIs with Flask and Python" by Teclado, taught by Jose Salvatierra.
-                    </p>
+                <p>
+                    Through this project, I gained experience in several key areas: working with data models using
+                    SQLAlchemy, performing data validation with Schemas, and managing data migrations with Alembic. I
+                    also learned to implement JWT access tokens for secure authentication. Additionally, I deepened my
+                    understanding of Docker, including its concepts such as images, volumes, containers, and Docker
+                    Compose. I further honed my skills using tools like Insomnia and DBeaver. Although this application
+                    lacks a frontend, the techniques and knowledge acquired are broadly applicable to various other
+                    projects.
+                </p>
+
+                <p class="reference">
+                    *This web application is based on the 2024 course "REST APIs with Flask and Python" by Teclado,
+                    taught by Jose Salvatierra.
+                </p>
+            </article>
+
+            <section>
+                <article class="project__meta-group">
+                    <h3 class="project__heading project__heading--meta">Technologies used</h3>
+
+                    <ul class="technology-list">
+                        <li class="technology-list__item">API</li>
+                        <li class="technology-list__item">Python</li>
+                        <li class="technology-list__item">Docker</li>
+                        <li class="technology-list__item">Insomnia</li>
+                        <li class="technology-list__item">SQLite</li>
+                    </ul>
                 </article>
 
-                <section>
-                    <article class="project__meta-group">
-                        <h3 class="project__heading project__heading--meta">Technologies used</h3>
-
-                        <ul class="technology-list">
-                            <li class="technology-list__item">API</li>
-                            <li class="technology-list__item">Python</li>
-                            <li class="technology-list__item">Docker</li>
-                            <li class="technology-list__item">Insomnia</li>
-                            <li class="technology-list__item">SQLite</li>
-                        </ul>
-                    </article>
-
-                    <!-- <a class="cta" href="{{ project['prod'] }}">
+                <!-- <a class="cta" href="{{ project['prod'] }}">
                         <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
                         View in production
                     </a> -->
-                </section>
-            </article>
-        </div>
-    </main>
+            </section>
+        </article>
+    </div>
+</main>
 {% endblock %}

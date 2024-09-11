@@ -2,3 +2,4 @@
 .flaskenv
 requirements-dev.txt
 __pycache__
+additions_note.txt

@@ -1,54 +1,52 @@
 {% extends 'base.html' %}
 {% block content %}
-    <main class="main main--project">
-        <div class="project_info">
-            <img
-                class="hero"
-                src="{{ url_for('static', filename=project['hero']) }}"
-                alt="Example image of project"
-            />
+<main class="main main--project">
+    <div class="project_info">
+        <img class="hero" src="{{ url_for('static', filename=project['hero']) }}" alt="Example image of project" />
 
-            <article class="project">
-                <article class="project__content">
-                    <h2 class="project__heading">{{ project['name'] }}</h2>
+        <article class="project">
+            <article class="project__content">
+                <h2 class="project__heading">{{ project['name'] }}</h2>
 
-                    <p>The discussion forum is a small webapplication build in Flask 
-                        where users can post their individual messages to discuss 
-                        the issues about a statement displayed at the top. This 
-                        project includes functionalities which are a good 
-                        learning practice and can be used in many other projects. 
-                        During this project I learned a lot more about 
-                        forms and POST-methods and upgraded my 
-                        general skills in HTML, Jinja2, CSS and Python (Flask library).
-                        Most importantly, I got familiar with the reading and writing to a MongoDB 
-                        database (NoSQL) to store the forum messages linked to the 
-                        time and date of posting.  
-                    </p>
-                    <p class="reference">
-                        *This project was based on the course 'Web Developer Bootcamp with Flask and Python' of 
-                        Jose Salvatierra (Teclado).
-                    </p>
+                <p>
+                    The Discussion Forum is a small web application built with Flask, where users can post individual
+                    messages to discuss issues related to a statement displayed at the top of the page. This project
+                    incorporates functionalities that offer valuable learning experiences and can be applied to many
+                    other projects.
+                </p>
+
+                <p>
+                    Throughout this project, I enhanced my understanding of forms and POST methods and improved my
+                    skills in HTML, Jinja2, CSS, and Python (using Flask libraries). Most notably, I gained experience
+                    with reading from and writing to a MongoDB (JSON) database to store forum messages, including their
+                    timestamps.
+                </p>
+
+                <p class="reference">
+                    *This project was based on the course 'Web Developer Bootcamp with Flask and Python' of
+                    Jose Salvatierra (Teclado).
+                </p>
+            </article>
+
+            <section>
+                <article class="project__meta-group">
+                    <h3 class="project__heading project__heading--meta">Technologies used</h3>
+
+                    <ul class="technology-list">
+                        <li class="technology-list__item">Python</li>
+                        <li class="technology-list__item">HTML</li>
+                        <li class="technology-list__item">Jinja2</li>
+                        <li class="technology-list__item">CSS</li>
+                        <li class="technology-list__item">MongoDB</li>
+                    </ul>
                 </article>
-
-                <section>
-                    <article class="project__meta-group">
-                        <h3 class="project__heading project__heading--meta">Technologies used</h3>
-
-                        <ul class="technology-list">
-                            <li class="technology-list__item">Python</li>
-                            <li class="technology-list__item">HTML</li>
-                            <li class="technology-list__item">CSS</li>
-                            <li class="technology-list__item">MongoDB</li>
-                        </ul>
-                    </article>
-
-                    <!-- <a class="cta" href="{{ project['prod'] }}">
+                <!-- <a class="cta" href="{{ project['prod'] }}">
                         <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
                         View in production
                     </a> -->
-                </section>
-            </article>
- 
-        </div>
-    </main>
+            </section>
+        </article>
+
+    </div>
+</main>
 {% endblock %}

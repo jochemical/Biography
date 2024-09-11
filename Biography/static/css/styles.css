@@ -217,7 +217,9 @@ body {
   
   .project__meta-group {
     margin-bottom: 1rem;
+    max-width: 100%; 
   }
+
   
   .project__meta-group,
   .cta {
@@ -247,8 +249,9 @@ body {
   .technology-list {
     list-style: none;
     padding-left: 0.75rem;
-    margin: 0;
+    margin: auto;
     line-height: 1.75;
+    padding: 0.2rem;
   }
   
   .technology-list__item:before {
@@ -260,7 +263,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 0.5rem;
-  
+
     /* necessary for vertical centering */
     transform: translateY(2px);
   }

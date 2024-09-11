@@ -32,9 +32,23 @@ projects = [
         "name": "Warehouse REST API",
         "thumb": "img/warehouse.png",
         "hero": "img/warehouse.png",
-        "categories": ["REST API","SQL & Docker"],
+        "categories": ["REST API","SQLite & Docker"],
         "slug": "warehouse",
     },
+        {
+        "name": "My Noteblock",
+        "thumb": "img/noteblock1.png",
+        "hero": "img/noteblock2.png",
+        "categories": ["React","Mock API"],
+        "slug": "noteblock",
+    },
+        {
+        "name": "A.I. Code-Generator",
+        "thumb": "img/AIcodegenerator3.png",
+        "hero": "img/AIcodegenerator2.png",
+        "categories": ["Django","OpenAI"],
+        "slug": "AIcodegenerator",
+    }
 ]
 
 # change the list to a dictionary of dictionaries:
