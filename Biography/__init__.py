@@ -35,6 +35,13 @@ projects = [
         "categories": ["REST API","SQLite & Docker"],
         "slug": "warehouse",
     },
+    {
+        "name": "Wiki Encyclopedia",
+        "thumb": "img/Wiki1.png",
+        "hero": "img/Wiki2.png",
+        "categories": ["Django","Markdown"],
+        "slug": "Wiki",
+    },
         {
         "name": "My Noteblock",
         "thumb": "img/noteblock1.png",
@@ -48,6 +55,20 @@ projects = [
         "hero": "img/AIcodegenerator2.png",
         "categories": ["Django","OpenAI"],
         "slug": "AIcodegenerator",
+    },       
+        {
+        "name": "Auction Marketplace",
+        "thumb": "img/AuctionMarketplace4.png",
+        "hero": "img/AuctionMarketplace3.png",
+        "categories": ["Django","SQLite"],
+        "slug": "AuctionMarketplace",
+    },
+        {
+        "name": "Mailbox",
+        "thumb": "img/Mailbox2.png",
+        "hero": "img/Mailbox2.png",
+        "categories": ["Django","JavaScript"],
+        "slug": "Mailbox",
     }
 ]
 

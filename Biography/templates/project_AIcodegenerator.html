@@ -1,55 +1,67 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
+
 <main class="main main--project">
-    <div>
-        <img class="hero" src="{{ url_for('static', filename=project['hero']) }}" alt="Example image of project."
-            style="border: 2px solid black;" />
-        <article class="project">
-            <article class="project__content">
-                <h2 class="project__heading">{{ project['name'] }}</h2>
+  <div>
+    <img
+      class="hero"
+      src="{{ url_for('static', filename=project['hero']) }}"
+      alt="Example image of project."
+      style="border: 2px solid black"
+    />
+    <article class="project">
+      <article class="project__content">
+        <h2 class="project__heading">{{ project['name'] }}</h2>
 
-                <p>
-                    This Django web application leverages OpenAI to provide code corrections and suggestions for
-                    personal code development. Users can input their code and have it fixed by OpenAI. Additionally,
-                    users can submit questions to generate code for specific purposes. The application requires users to
-                    select a programming language from a dropdown menu. To use the application, users must first
-                    register and log in. The "Past" page allows users to review code they previously fixed or generated.
-                    User data is stored in a relational SQLite database.
-                </p>
+        <p>
+          This Django web application leverages OpenAI to provide code
+          corrections and suggestions for personal code development. Users can
+          input their code and have it fixed by OpenAI. Additionally, users can
+          submit questions to generate code for specific purposes. The
+          application requires users to select a programming language from a
+          dropdown menu. To use the application, users must first register and
+          log in. The "Past" page allows users to review code they previously
+          fixed or generated. User data is stored in a relational SQLite
+          database.
+        </p>
 
-                <p>
-                    During this project, I deepened my knowledge of the Django framework and became more familiar with
-                    Bootstrap for creating responsive and visually appealing web designs quickly. The most enjoyable
-                    aspect of this project was learning how to integrate OpenAI into a web application. As AI becomes
-                    increasingly significant in web development, exploring how it can be used and integrated is both
-                    fascinating and valuable. Overall, it was an exciting and rewarding project!
-                </p>
+        <p>
+          During this project, I deepened my knowledge of the Django framework
+          and became more familiar with Bootstrap for creating responsive and
+          visually appealing web designs quickly. The most enjoyable aspect of
+          this project was learning how to integrate OpenAI into a web
+          application. As AI becomes increasingly significant in web
+          development, exploring how it can be used and integrated is both
+          fascinating and valuable. Overall, it was an exciting and rewarding
+          project!
+        </p>
 
-                <p class="reference">
-                    *This project was based on the course 'Create a Code Writing ChatGPT A.I. Site With Django Python' of
-                    John Elder (Codemy).
-                </p>
-            </article>
+        <p class="reference">
+          *This project was based on the course 'Create a Code Writing ChatGPT
+          A.I. Site With Django Python' of John Elder (Codemy).
+        </p>
+      </article>
 
-            <section>
-                <article class="project__meta-group">
-                    <h3 class="project__heading project__heading--meta">Technologies used</h3>
+      <section>
+        <article class="project__meta-group">
+          <h3 class="project__heading project__heading--meta">
+            Technologies used
+          </h3>
 
-                    <ul class="technology-list">
-                        <li class="technology-list__item">Django</li>
-                        <li class="technology-list__item">OpenAI</li>
-                        <li class="technology-list__item">HTML</li>
-                        <li class="technology-list__item">CSS</li>
-                        <li class="technology-list__item">SQLite</li>
-                    </ul>
-                </article>
+          <ul class="technology-list">
+            <li class="technology-list__item">Django</li>
+            <li class="technology-list__item">OpenAI</li>
+            <li class="technology-list__item">HTML</li>
+            <li class="technology-list__item">CSS</li>
+            <li class="technology-list__item">SQLite</li>
+          </ul>
+        </article>
 
-                <!-- <a class="cta" href="{{ project['prod'] }}">
+        <!-- <a class="cta" href="{{ project['prod'] }}">
                         <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
                         View in production
                     </a> -->
-            </section>
-        </article>
-    </div>
+      </section>
+    </article>
+  </div>
 </main>
 {% endblock %}
