@@ -69,6 +69,13 @@ projects = [
         "hero": "img/Mailbox2.png",
         "categories": ["Django","JavaScript"],
         "slug": "Mailbox",
+    },
+            {
+        "name": "Social Network",
+        "thumb": "img/Network1.png",
+        "hero": "img/Network2.png",
+        "categories": ["Django","JavaScript (SPA)"],
+        "slug": "Network",
     }
 ]
 
