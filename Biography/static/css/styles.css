@@ -172,6 +172,17 @@ body {
   justify-content: center;
 }
 
+.video-demo {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  /* align-content: center; */
+  margin: 20px auto;
+  display: block;
+  justify-content: center;
+}
+
 /*  Description of detail page */
 
 .project {

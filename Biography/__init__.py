@@ -73,7 +73,7 @@ projects = [
             {
         "name": "Social Network",
         "thumb": "img/Network1.png",
-        "hero": "img/Network2.png",
+        "hero": "vid/Network_vid_/mp4",
         "categories": ["Django","JavaScript (SPA)"],
         "slug": "Network",
     }
