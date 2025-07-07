@@ -40,7 +40,7 @@ projects = [
         "thumb": "img/Wiki1.png",
         "hero": "img/Wiki2.png",
         "categories": ["Django","Markdown"],
-        "slug": "Wiki",
+        "slug": "wiki",
     },
         {
         "name": "My Noteblock",
