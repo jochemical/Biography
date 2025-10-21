@@ -51,8 +51,8 @@ projects = [
     },
         {
         "name": "A.I. Code-Generator",
-        "thumb": "img/AIcodegenerator3.png",
-        "hero": "img/AIcodegenerator2.png",
+        "thumb": "img/AIcodegenerator2.png",
+        "hero": "img/AIcodegenerator3.png",
         "categories": ["Django","OpenAI"],
         "slug": "AIcodegenerator",
     },       
@@ -65,7 +65,7 @@ projects = [
     },
         {
         "name": "Mailbox",
-        "thumb": "img/Mailbox2.png",
+        "thumb": "img/Mailbox1.png",
         "hero": "img/Mailbox2.png",
         "categories": ["Django","JavaScript"],
         "slug": "Mailbox",

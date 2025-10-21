@@ -39,7 +39,7 @@ body {
 }
 
 .hr-about {
-  max-width: 800px;
+  max-width: 1000px;
   margin-bottom: 20px;
 }
 
@@ -62,7 +62,7 @@ body {
 .main--about,
 .main--error {
   flex-direction: column;
-  max-width: 800px;
+  max-width: 1000px;
   padding: 0 1rem;
   line-height: 150%;
 }
@@ -118,6 +118,8 @@ body {
 }
 
 .project-card__image {
+  border-radius: 8px; 
+  border: solid black 0.5px;
   max-width: 100%;
   margin-bottom: 1rem;
   transition: transform 0.2s ease-in-out;
@@ -163,12 +165,14 @@ body {
 /*  Image of detail page */
 
 .hero {
+  width: 80%;
   max-width: 800px;
+  /* max-width: 800px; */
   /* border: solid 1px; */
   border-radius: 1.5rem;
   align-content: center;
   margin: 0 auto;
-  display: flex;
+  display: block;
   justify-content: center;
 }
 
@@ -187,14 +191,17 @@ body {
 
 .project {
   margin-top: 20px;
-  display: flex;
   max-width: 70rem;
-  flex-direction: column;
+
+  display: flex;
+  flex-direction: row;
+
   font-size: 1.2rem;
   padding: 0 1rem;
 }
 
 .project__content {
+  flex: 3;
   font-family: "Quicksand", "Special Elite", system-ui;
   margin-bottom: 1rem;
   margin-right: 2rem;
@@ -207,10 +214,10 @@ body {
 }
 
 /* Adjust for screensize */
-@media (min-width: 48.75rem) {
+@media (max-width: 38rem) {
   .project {
-    flex-direction: row;
-    padding: 0;
+    flex-direction: column;
+    padding: 2em;
   }
 }
 
@@ -218,6 +225,11 @@ body {
 .main--project {
   justify-content: center;
 }
+
+.main.reference {
+  line-height: 1rem;
+}
+
 
 @media (max-width: 48.75em) {
   .main--project {
@@ -238,6 +250,8 @@ body {
 }
 
 .project__meta-group {
+  flex: 1;
+  margin-top: 30px;
   margin-bottom: 1rem;
   max-width: 100%;
 }
