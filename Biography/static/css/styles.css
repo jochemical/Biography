@@ -252,14 +252,16 @@ h1 {
 .logo {
   /* filter: brightness(0.3) contrast(1.8) saturate(1.0); */
   height: 120px;
+  width: auto; 
   overflow: hidden;
   margin-left: 20px;
 }
 
 .logo img {
-  width: 100%;             
+  width: auto;             
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  display: block;
 }
 
 .profile-picture img {
