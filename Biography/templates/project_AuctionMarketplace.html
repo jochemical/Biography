@@ -2,11 +2,18 @@
 
 <main class="main main--project">
   <div>
-    <img
+        <video controls class ="video-demo">
+      <source
+        src="{{ url_for('static', filename='vid/Marketplace_demo_small.mp4') }}"
+        type="video/mp4"
+      />
+      Je browser ondersteunt geen HTML5-video.
+    </video>
+    <!-- <img
       class="hero"
       src="{{ url_for('static', filename=project['hero']) }}"
       alt="Example image of project"
-    />
+    /> -->
 
     <article class="project">
       <article class="project__content">

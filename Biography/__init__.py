@@ -58,8 +58,8 @@ projects = [
     },       
         {
         "name": "Auction Marketplace",
-        "thumb": "img/AuctionMarketplace4.png",
-        "hero": "img/AuctionMarketplace3.png",
+        "thumb": "img/Marketplace_.png",
+        "hero": "vid/Marketplace_demo_small.mp4",
         "categories": ["Django","SQLite"],
         "slug": "AuctionMarketplace",
     },
@@ -73,7 +73,7 @@ projects = [
             {
         "name": "Social Network",
         "thumb": "img/Network1.png",
-        "hero": "vid/Network_vid_/mp4",
+        "hero": "vid/Network_vid_.mp4",
         "categories": ["Django","JavaScript (SPA)"],
         "slug": "Network",
     }
