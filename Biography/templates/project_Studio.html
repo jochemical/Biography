@@ -1,0 +1,57 @@
+{% extends 'base.html' %} {% block content %}
+
+<main class="main main--project">
+  <div>
+    <img
+      class="hero"
+      src="{{ url_for('static', filename=project['hero']) }}"
+      alt="Example image of project."
+    />
+
+    <article class="project">
+      <article class="project__content">
+        <h2 class="project__heading">{{ project['name'] }}</h2>
+
+        <p>
+          This Django web application was developed as a practice project, with
+          a primary focus on design quality and user experience. It demonstrates
+          a bilingual setup, allowing users to switch seamlessly between Dutch
+          and English, and integrates SoundCloud audio tracks for interactive
+          multimedia content. Key challenges included optimizing page load times
+          despite Google Fonts, high-resolution images, and audio files, which
+          was addressed with background overlays for gradual image loading.
+          JavaScript was used to provide image enlargement functionality while
+          using smaller preview images for an improved user experience. The
+          application also features a comprehensive content management system,
+          allowing staff/admin users to edit pages, images, text, and audio. The
+          project remains in development, with ongoing improvements and feature
+          additions.
+        </p>
+
+        <p class="reference"></p>
+      </article>
+
+      <section>
+        <article class="project__meta-group">
+          <h3 class="project__heading project__heading--meta">
+            Technologies used
+          </h3>
+
+          <ul class="technology-list">
+            <li class="technology-list__item">Django</li>
+            <li class="technology-list__item">Python</li>
+            <li class="technology-list__item">JavaScript</li>
+            <li class="technology-list__item">HTML</li>
+            <li class="technology-list__item">CSS</li>
+          </ul>
+        </article>
+
+        <!-- <a class="cta" href="{{ project['prod'] }}">
+                        <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+                        View in production
+                    </a> -->
+      </section>
+    </article>
+  </div>
+</main>
+{% endblock %}

@@ -70,12 +70,19 @@ projects = [
         "categories": ["Django","JavaScript"],
         "slug": "Mailbox",
     },
-            {
+        {
         "name": "Social Network",
         "thumb": "img/Network1.png",
         "hero": "vid/Network_vid_.mp4",
         "categories": ["Django","JavaScript (SPA)"],
         "slug": "Network",
+    },
+    {
+        "name": "Music Recording Studio",
+        "thumb": "img/Studios1.png",
+        "hero": "img/Studios2.png",
+        "categories": ["Django","JavaScript"],
+        "slug": "Studio",
     }
 ]
 
