@@ -63,14 +63,28 @@ projects = [
         "categories": ["Django","SQLite"],
         "slug": "AuctionMarketplace",
     },
-        {
+    {
         "name": "Mailbox",
         "thumb": "img/Mailbox1.png",
         "hero": "img/Mailbox2.png",
         "categories": ["Django","JavaScript"],
         "slug": "Mailbox",
     },
-        {
+    {
+        "name": "Solar System Simulation Game",
+        "thumb": "img/planet2.png",
+        "hero": "img/planet2.png",
+        "categories": ["JavaScript", "EdTech"],
+        "slug": "SimulationGame",
+    },
+    {
+        "name": "Fibonacci Game",
+        "thumb": "img/Fibgame1.png",
+        "hero": "img/Fibgame2.png",
+        "categories": ["Python","Tkinter"],
+        "slug": "Fibonacci",
+    },
+    {
         "name": "Social Network",
         "thumb": "img/Network1.png",
         "hero": "vid/Network_vid_.mp4",
@@ -83,6 +97,20 @@ projects = [
         "hero": "img/Studios2.png",
         "categories": ["Django","JavaScript"],
         "slug": "Studio",
+    },
+    {
+        "name": "School's Out (LMS)",
+        "thumb": "img/LMS.png",
+        "hero": "img/LMS.png",
+        "categories": ["Django","React (MUI)"],
+        "slug": "LMS",
+    },
+    {
+        "name": "Weight Consultant Platform",
+        "thumb": "img/diet2.png",
+        "hero": "img/diet1.png",
+        "categories": ["Django","Wagtail CMS"],
+        "slug": "WeightConsultant",
     }
 ]
 

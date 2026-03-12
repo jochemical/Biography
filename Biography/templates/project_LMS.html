@@ -1,0 +1,59 @@
+{% extends 'base.html' %} {% block content %}
+
+<main class="main main--project">
+  <div>
+    <img
+      class="hero"
+      src="{{ url_for('static', filename=project['hero']) }}"
+      alt="Example image of project"
+    />
+
+    <article class="project">
+      <article class="project__content">
+        <h2 class="project__heading">{{ project['name'] }}</h2>
+
+        <p>
+          Full-stack web application using React and Django with a MySQL
+          backend. Database designed in DrawSQL and implemented in MySQL
+          Workbench using raw SQL, then migrated to Django with models and
+          migrations. Django REST API connects the frontend to the MySQL server,
+          with ongoing feature development.
+        </p>
+        <p>
+          Platform for students, teachers, and tutors to share educational
+          materials, track progress and grades, take online tests, manage
+          schedules with a planner, and more. Frontend built with React
+          (react-router-dom, hooks, state management) and styled with MUI
+          components (DataGrid, Modal, Box, Toolbar, sx styling). JavaScript
+          features such as async/await and interactive modals enable dynamic,
+          responsive interactions.
+        </p>
+
+        <p class="reference"></p>
+      </article>
+
+      <section>
+        <article class="project__meta-group">
+          <h3 class="project__heading project__heading--meta">
+            Technologies used
+          </h3>
+
+          <ul class="technology-list">
+            <li class="technology-list__item">Django</li>
+            <li class="technology-list__item">REST API</li>
+            <li class="technology-list__item">React (MUI)</li>
+            <li class="technology-list__item">MySQL</li>
+            <li class="technology-list__item">HTML & CSS</li>
+            <li class="technology-list__item">JS & JSX</li>
+          </ul>
+        </article>
+
+        <!-- <a class="cta" href="{{ project['prod'] }}">
+          <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+          View in production
+        </a> -->
+      </section>
+    </article>
+  </div>
+</main>
+{% endblock %}

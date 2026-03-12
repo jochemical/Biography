@@ -1,0 +1,69 @@
+{% extends 'base.html' %} {% block content %}
+
+<main class="main main--project">
+  <div>
+    <img
+      class="hero hero--weight-consultant"
+      src="{{ url_for('static', filename=project['hero']) }}"
+      alt="Example image of project"
+    />
+
+    <article class="project">
+      <article class="project__content">
+        <h2 class="project__heading">{{ project['name'] }}</h2>
+
+        <p>
+          Weight Consultancy (Python/Wagtail + Vanilla JS) - Full-stack website
+          and CMS built with Python and Wagtail, designed to be highly
+          maintainable and fully manageable through the admin interface. The
+          site functions as a complete CMS where most content can be configured
+          through the admin panel, including images, StreamField blocks, and
+          custom admin settings such as contact information. Content editors can
+          easily structure pages using dynamic blocks, while the SQL-backed
+          architecture ensures reliable data management. The project is
+          currently ongoing and built with scalability and maintainability in
+          mind.
+        </p>
+
+        <p>
+          The frontend is implemented with responsive HTML/CSS and Vanilla
+          JavaScript, following the client's design tokens and style conventions
+          to ensure visual consistency. JavaScript enhances the user experience
+          with an expandable navigation menu and shadow overlay interactions.
+          The interface emphasizes usability and clear UX/UI patterns aligned
+          with the organization's guidelines, with extensive use of card-based
+          layouts. Styling is organized using page- and component-specific CSS
+          with BEM modifiers, creating a scalable architecture. The website also
+          includes a structured contact page with an integrated Google Maps
+          location, contact form, and social media links.
+        </p>
+
+        <p class="reference"></p>
+      </article>
+
+      <section>
+        <article class="project__meta-group">
+          <h3 class="project__heading project__heading--meta">
+            Technologies used
+          </h3>
+
+          <ul class="technology-list">
+            <li class="technology-list__item">Django</li>
+            <li class="technology-list__item">Wagtail</li>
+            <li class="technology-list__item">CMS</li>
+            <li class="technology-list__item">MySQL</li>
+            <li class="technology-list__item">HTML/CSS/JS</li>
+            <li class="technology-list__item">UI/UX</li>
+            <li class="technology-list__item">Design tokens</li>
+          </ul>
+        </article>
+
+        <!-- <a class="cta" href="{{ project['prod'] }}">
+          <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+          View in production
+        </a> -->
+      </section>
+    </article>
+  </div>
+</main>
+{% endblock %}

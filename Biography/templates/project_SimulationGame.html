@@ -1,0 +1,67 @@
+{% extends 'base.html' %} {% block content %}
+
+<main class="main main--project">
+  <div>
+    <img
+      class="hero"
+      src="{{ url_for('static', filename=project['hero']) }}"
+      alt="Example image of project"
+    />
+
+    <article class="project">
+      <article class="project__content">
+        <h2 class="project__heading">{{ project['name'] }}</h2>
+
+        <p>
+          Solar System Simulation Game is an educational 2D game where players
+          adjust planetary properties to create habitable conditions. The
+          simulation uses physics-based models to show planetary motion,
+          climate, and habitability. It helps students understand how different
+          factors influence a planet's environment. The game also raises
+          awareness of global climate and environmental issues. Students can
+          learn physics concepts while gaining experience with simulations and
+          programming. The game features a retro, canvas-based arcade style.
+          Technologies used include JavaScript, HTML, and CSS.
+        </p>
+        <p>
+          At the start of the game, players define the properties of their three
+          planets, adjusting factors such as planetary mass, number of moons,
+          rings, type of planet, and the size of the atmosphere, hydrosphere,
+          and lithosphere. Players also set the properties of the sun, including
+          its type, as well as the number of comets and meteorites in the
+          system. During gameplay, players can control all three planets,
+          switching between them to adjust speed, direction, and rotational
+          velocity. The goal is to maintain planetary conditions that support
+          life: surface temperature, atmosphere, and other factors affect a
+          bioactivity slider, which increases under favorable conditions and
+          decreases under poor ones. The player wins when bioactivity reaches a
+          level capable of supporting a modern civilization.
+        </p>
+
+        <p class="reference"></p>
+      </article>
+
+      <section>
+        <article class="project__meta-group">
+          <h3 class="project__heading project__heading--meta">
+            Technologies used
+          </h3>
+
+          <ul class="technology-list">
+            <li class="technology-list__item">Javascript</li>
+            <li class="technology-list__item">HTML & CSS</li>
+            <li class="technology-list__item">Simulation</li>
+            <li class="technology-list__item">Physics</li>
+            <li class="technology-list__item">EdTech</li>
+          </ul>
+        </article>
+
+        <!-- <a class="cta" href="{{ project['prod'] }}">
+          <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+          View in production
+        </a> -->
+      </section>
+    </article>
+  </div>
+</main>
+{% endblock %}
