@@ -82,7 +82,7 @@ projects = [
         "thumb": "img/Fibgame1.png",
         "hero": "img/Fibgame2.png",
         "categories": ["Python","Tkinter"],
-        "slug": "Fibonacci",
+        "slug": "fibonacci",
     },
     {
         "name": "Social Network",
