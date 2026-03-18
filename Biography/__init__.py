@@ -71,14 +71,14 @@ projects = [
         "slug": "Mailbox",
     },
     {
-        "name": "Solar System Simulation Game",
+        "name": "Solar System Simulation",
         "thumb": "img/planet2.png",
         "hero": "img/planet2.png",
         "categories": ["JavaScript", "EdTech"],
         "slug": "SimulationGame",
     },
     {
-        "name": "Fibonacci Game",
+        "name": "Fibonacci Grid Algorithm",
         "thumb": "img/Fibgame1.png",
         "hero": "img/Fibgame2.png",
         "categories": ["Python","Tkinter"],
